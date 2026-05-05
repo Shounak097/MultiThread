@@ -7,6 +7,7 @@ import java.util.concurrent.locks.Lock;
  * 2. If Counter obj is passed inside synchronized() then all the synchronized method inside the Counter will get blocked
  * 3. Synchronized method act as Synchronized(this) for instance method
  * 4. for static method, synchronized method will work in class level blocking only static method across objects
+ * 5. private final Object lock = new Object() can we passed for better synchronization in sychronization()
  */
 public class Subtractor implements Runnable {
     Counter counter;
